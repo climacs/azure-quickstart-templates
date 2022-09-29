@@ -1,6 +1,42 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-  }
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "EastUS" // TODO: Fill in parameter value
+        },
+        "functionAppName": {
+            "value": "jwtintegrationprodeus" // TODO: Fill in parameter value
+        },
+        "functionAppPlanName": {
+            "value": "jwtintegrationprodeusappplan" // TODO: Fill in parameter value
+        },
+        "functionPlanOS": {
+            "value": "Linux"
+        },
+        "functionAppPlanSku": {
+            "value": "EP1"
+        },
+        "functionStorageAccountName": {
+            "value": "jwtintegratedstorageprodeus" // TODO: Fill in parameter value
+        },
+        "vnetName": {
+            "value": "VNET-Enterprise-Analytics-Integration-Fabric-Prod-Network-EUS" // TODO: Fill in parameter value
+        },
+        "functionSubnetName": {
+            "value": "SNET-Enterprise-Analytics-Integration-Fabric-APIM-Prod-EUS"
+        },
+        "privateEndpointSubnetName": {
+            "value": "SNET-Enterprise-Analytics-Integration-Fabric-APIM-Prod-EUS"
+        },
+        "vnetAddressPrefix": {
+            "value": "10.146.88.192/28"
+        },
+        "functionSubnetAddressPrefix": {
+            "value": "10.146.88.192/28"
+        },
+        "privateEndpointSubnetAddressPrefix": {
+            "value": "10.146.88.192/28"
+        }
+    }
 }
